@@ -6,7 +6,9 @@
   "author": "Jacky ZHANG",
   "dependencies": {
     "@vimesh/portlet": "latest",
-    "express": "^4.17.1"
+    "echarts": "^4.8.0",
+    "express": "^4.17.1",
+    "resize-detector": "^0.2.2"
   },
   "scripts": {
     "dev": "cross-env NODE_ENV=development nodemon index.js --ignore mnt/",

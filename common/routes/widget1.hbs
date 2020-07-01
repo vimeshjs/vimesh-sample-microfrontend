@@ -1,5 +1,15 @@
 {{!< widget }}
 <div>
-    Project Logo <img src='/@common/logo-128x128.png' width="30px"> 
-   
+    Project Logo : <img src='/@common/logo-128x128.png' width="30px"> 
+   <hello></hello>
 </div>
+
+<script src="/@common/_/Hello.js"></script>
+<script>
+    var h = Hello
+    $mixins.push({
+        components: {
+            hello: Hello.default
+        }
+    })
+</script>

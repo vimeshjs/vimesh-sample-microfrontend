@@ -10,7 +10,7 @@
 </style>
 
 <script>
-import echarts from 'echarts/lib/echarts'
+import echarts from 'echarts'
 import debounce from 'lodash/debounce'
 import { addListener, removeListener } from 'resize-detector'
 
@@ -272,7 +272,6 @@ export default {
   },
   registerTheme (name, theme) {
     echarts.registerTheme(name, theme)
-  },
-  graphic: echarts.graphic
+  }
 }
 </script>
