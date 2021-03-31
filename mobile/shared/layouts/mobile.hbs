@@ -67,6 +67,7 @@
             return $i18n && $i18n[item] || item 
         }
     </script>
+    {{{block 'components.styles'}}}
 </head>
 
 <body>
@@ -74,6 +75,7 @@
         {{{body}}}
     </div>
     {{{block 'scripts'}}}
+    {{{block 'components.scripts'}}}
     <script type="text/javascript">
         new Vue({
             mixins: $mixins,

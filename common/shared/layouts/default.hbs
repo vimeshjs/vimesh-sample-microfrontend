@@ -22,6 +22,7 @@
         }
     </style>
     {{{twBlock}}}
+    {{{block 'components.styles'}}}
     {{{block 'styles'}}}
     {{{block 'scripts@head'}}}
     <script type="text/javascript">
@@ -67,6 +68,7 @@
     <div id='app' v-cloak>
        {{{body}}}
     </div>
+    {{{block 'components.scripts'}}}
     {{{block 'scripts'}}}
     <script type="text/javascript">
         new Vue({

@@ -1,3 +1,4 @@
+
 <div class="container mx-auto lg:max-w-xl">
   <div class=" text-center h-screen bg_color">
     <div class="absolute flex content-between flex-wrap w-full h-screen pb-12 pt-16 ">
@@ -21,7 +22,7 @@
         {{#each ditems}}
         {{template '${$index + 1}'}}. {{this.title}} <br>
         {{template '["${title}" display at portlet "${portlet}"]' title=this.title portlet=../$portlet}}
-        <div>{{{fetch this.url}}}</div>
+        <div>{{{fetch this.url styleBlock='components.styles' scriptBlock='components.scripts'}}}</div>
         {{/each}}
       </div>
       <div class="w-1/6"></div>

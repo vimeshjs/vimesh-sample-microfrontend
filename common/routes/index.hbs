@@ -1,0 +1,13 @@
+
+      <div class='w-full'>
+        {{ extensions 'dashboard@server' assignTo='ditems'}}
+        <hr>
+        <b>Widget @ Server:</b>
+        <hr>
+        {{template '${$root.$portlet + 1}'}}
+        {{#each ditems}}
+        {{template '${$index + 1}'}}. {{this.title}} <br>
+        {{template '["${title}" display at portlet "${portlet}"]' title=this.title portlet=../$portlet}}
+        <div>{{{fetch this.url styleBlock='components.styles' scriptBlock='components.scripts'}}}</div>
+        {{/each}}
+      </div>
