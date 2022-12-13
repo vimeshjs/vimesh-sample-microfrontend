@@ -7,7 +7,7 @@
   "dependencies": {
     "@vimesh/portlet": "latest",
     "echarts": "^4.8.0",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "resize-detector": "^0.2.2"
   },
   "scripts": {
