@@ -8,7 +8,7 @@
   "dependencies": {
     "@vimesh/portlet": "latest",
     "@vimesh/mongodb": "latest",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "jsonwebtoken": "^8.5.1",
     "passport": "^0.4.1",
     "passport-jwt": "^4.0.0",
